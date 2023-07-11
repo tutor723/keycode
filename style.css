@@ -1,0 +1,33 @@
+<script src="script.js"></script>
+<style>
+body{
+margin: 50px;
+}
+    #box{
+     
+    }
+    #leftbox {
+        float: left;
+        background:white;;
+        width:25%;
+        margin-top: 200px;
+        margin-left: 150px;
+        height:280px;
+    }
+    #middlebox{
+        float: left;
+        background:white;
+        width:25%;
+        margin-top: 200px;
+        margin-left: 40px;
+        height:280px;
+    }
+    #rightbox{
+        float: left;
+        background:white;
+        width:25%;
+        margin-top: 200px;
+        margin-left: 40px;
+        height:280px;
+    }
+</style>
