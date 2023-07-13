@@ -1,49 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Keycode Generator</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center><h1>DICE GAME</h1></center>
+<div id="box">
     
-   
 
-<body >
-    <h1>press any key to get the Javascript event keycode</h1>
-    <div id ="box">
-    <div id = "leftbox">
- <h2 id = "eventKey"></h2>
-       
+    <button id ="start">START AGAIN</button>
+
+
+<div id ="dice1">
+    <h4 id="scor1">PLAYER1 SCORE IS:0</h4>
+    <h4 id="total1">PLAYER1 TOTAL IS:0</h4>
+   
+        <button id ="rollPlayer1">PLAYER1</button>
     </div>
-     
-    <div id = "middlebox">
-        <h2 id = "demo"></h2>
-       
-    </div>
-     
-    <div id = "rightbox">
-        <h2 id = "code"></h2>
-       
-    </div>
+    <img id="image1" style="height: 25px; width: 25px;"></h2>
+<div id = "dice2">
+    <h4 id="scor2">PLAYER2 SCORE IS:0</h4>
+    <h4 id="total2">PLAYER2 TOTAL IS:0</h4>
+      
+    <button id ="rollPlayer2">PLAYER2</button>
 </div>
-<script>
-
-document.addEventListener('keydown', function(event) {
-    var key = event.key; // "a", "1", "Shift", etc.
-    console.log(key);
-    document.getElementById("eventKey").innerHTML= key;
-    var code = event.code;
-    
-
-    let keyCode = event.which; // "a", "1", "Shift", etc.
-    console.log(keyCode);
-    document.getElementById("demo").innerHTML= keyCode;
-    document.getElementById("code").innerHTML= code;
-});
 
 
-    </script>
-   
+
+
+
+<button id ="hold">STOP!</button>
+<div id ="win"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
-
 </html>
