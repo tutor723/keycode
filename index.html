@@ -1,41 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <center><h1>DICE GAME</h1></center>
-<div id="box">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Keycode Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+   
+
+<body >
+    <h1>press any key to get the Javascript event keycode</h1>
+
+    <input type="text" size="40" NAME="VALUE" id="name">
+    <div id ="box">
+    <div id = "leftbox">
+        <h1>KEY</h1>
+ <h2 id = "eventKey"></h2>
+       
+    </div>
+     
+    <div id = "middlebox">
+        <h1>CHARCODE</h1>
+        <h2 id = "demo"></h2>
+       
+    </div>
+     
+    <div id = "rightbox">
+        <h1></h1>
+        <h1>CODE</h1>
+        <h2 id = "code"></h2>
+       
+    </div>
+   
+</div>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=B612+Mono');
+
+html, body {
+    font-family: "B612 Mono", monospace;
+    text-align: center;
+}
+    </style>
+<script>
+
+document.addEventListener('keydown', function(event) {
+    var key = event.key; 
+    console.log(key);
+    document.getElementById("eventKey").innerHTML= key;
+    var code = event.code;
     
 
-    <button id ="start">START AGAIN</button>
+    let keyCode = event.which; 
+    console.log(keyCode);
+    document.getElementById("demo").innerHTML= keyCode;
+    document.getElementById("code").innerHTML= code;
 
 
-<div id ="dice1">
-    <h4 id="scor1">PLAYER1 SCORE IS:0</h4>
-    <h4 id="total1">PLAYER1 TOTAL IS:0</h4>
+    //document.write(`The keyCode is ${key} \n`);
+    //document.write("<br>");
+    //document.write(`\n The keyCode is ${keyCode}`);
+    //document.write("<br>");
+    //document.write(`\n The keyCode is ${code}`);
+    function myFunction() {
+ var value=   document.getElementById("name").value="";
+ console.log(value);
+}
+myFunction();
    
-        <button id ="rollPlayer1">PLAYER1</button>
-    </div>
-    <img id="image1" style="height: 25px; width: 25px;"></h2>
-<div id = "dice2">
-    <h4 id="scor2">PLAYER2 SCORE IS:0</h4>
-    <h4 id="total2">PLAYER2 TOTAL IS:0</h4>
-      
-    <button id ="rollPlayer2">PLAYER2</button>
-</div>
+});
 
 
 
 
-
-<button id ="hold">STOP!</button>
-<div id ="win"></div>
-</div>
-
-<script src="script.js"></script>
+    </script>
+   
 </body>
+
 </html>
