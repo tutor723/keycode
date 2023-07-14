@@ -1,33 +1,105 @@
-<script src="script.js"></script>
-<style>
+
+@import url('https://fonts.googleapis.com/css?family=B612+Mono');
+
+html, body,#name {
+    font-family: "B612 Mono", monospace;
+    text-align: center;
+}
 body{
 margin: 50px;
+background-color: bisque;
 }
     #box{
-     
+        #h2 {
+            display: none;
+        }
+
+        #name{
+            font-family: Arial, Helvetica, sans-serif;
+        }
     }
     #leftbox {
         float: left;
-        background:white;;
+        background:green;
         width:25%;
-        margin-top: 200px;
+        margin-top: 150px;
         margin-left: 150px;
         height:280px;
     }
     #middlebox{
         float: left;
-        background:white;
+        background:green;
         width:25%;
-        margin-top: 200px;
+        margin-top: 150px;
         margin-left: 40px;
         height:280px;
     }
     #rightbox{
         float: left;
-        background:white;
+        background:green;
         width:25%;
-        margin-top: 200px;
+        margin-top: 150px;
         margin-left: 40px;
         height:280px;
     }
-</style>
+#name {
+    margin-top: 15px;
+    height: 45px;
+    font-weight: 900;
+    color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #box{
+        display:flex;
+        flex-direction: column;
+
+    }
+
+    #rightbox,#leftbox,#middlebox {
+    
+        background:green;
+        width:80%;
+        
+        height:150px;
+        margin-top: 50px;
+        margin-left: 50px;
+        
+
+    }
+    #name{
+        width:50%;
+    }
+    #h1 {
+        display: none;
+    }
+    
+
+  }
+
+  @media only screen and (max-width: 1036px) {
+
+    #box{
+        display:flex;
+        flex-direction: column;
+
+    }
+
+    #rightbox,#leftbox,#middlebox {
+    
+        background:green;
+        width:80%;
+        
+        height:130px;
+        margin-top: 50px;
+        margin-left: 50px;
+        
+
+    }
+    #h1 {
+        display: none;
+    }
+    
+
+  }
