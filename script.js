@@ -34,7 +34,8 @@ function keycode(event) {
 var key = event.key;
 var location = event.location;
 var which = event.which;
-var code = event.code;
+var code = event.getKeyCode;
+   
 head.textContent = which;
 document.getElementById("eventKey").innerHTML= key;
 document.getElementById("eventLocation").innerHTML= location;
