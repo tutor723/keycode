@@ -9,7 +9,8 @@
    
 
 <body >
-    <h1>press any key to get the Javascript event keycode</h1>
+    <h1 id ="h1">Press any key to get the Javascript event keycode</h1>
+    <h1 id ="h2">Press any key </h1>
 
     <input type="text" size="40" NAME="VALUE" id="name">
     <div id ="box">
@@ -33,47 +34,15 @@
     </div>
    
 </div>
-<style>
-    @import url('https://fonts.googleapis.com/css?family=B612+Mono');
-
-html, body {
-    font-family: "B612 Mono", monospace;
-    text-align: center;
-}
-    </style>
-<script>
-
-document.addEventListener('keydown', function(event) {
-    var key = event.key; 
-    console.log(key);
-    document.getElementById("eventKey").innerHTML= key;
-    var code = event.code;
-    
-
-    let keyCode = event.which; 
-    console.log(keyCode);
-    document.getElementById("demo").innerHTML= keyCode;
-    document.getElementById("code").innerHTML= code;
-
-
-    //document.write(`The keyCode is ${key} \n`);
-    //document.write("<br>");
-    //document.write(`\n The keyCode is ${keyCode}`);
-    //document.write("<br>");
-    //document.write(`\n The keyCode is ${code}`);
-    function myFunction() {
- var value=   document.getElementById("name").value="";
- console.log(value);
-}
-myFunction();
-   
-});
 
 
 
 
-    </script>
-   
+
+
+
+
+<script src="script.js"></script>
 </body>
 
 </html>
