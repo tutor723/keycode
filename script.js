@@ -1,4 +1,29 @@
 // const input = document.getElementsByTagName('input');
+document.addEventListener('keydown', function(event) {
+    var key = event.key; 
+    console.log(key);
+    document.getElementById("eventKey").innerHTML= key;
+    var code = event.code;
+    
+
+    let keyCode = event.which; 
+    console.log(keyCode);
+    document.getElementById("demo").innerHTML= keyCode;
+    document.getElementById("code").innerHTML= code;
+
+
+    //document.write(`The keyCode is ${key} \n`);
+    //document.write("<br>");
+    //document.write(`\n The keyCode is ${keyCode}`);
+    //document.write("<br>");
+    //document.write(`\n The keyCode is ${code}`);
+    function myFunction() {
+ var value=   document.getElementById("name").value="";
+ console.log(value);
+}
+myFunction();
+   
+});
 
 
 const welcome = document.getElementById('welcome');
